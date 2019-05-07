@@ -1,0 +1,83 @@
+{
+    "type": "object",
+    "properties": {
+        "sort": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "name",
+                    "-name",
+                    "type",
+                    "-type",
+                    "category",
+                    "-category",
+                    "code",
+                    "-code",
+                    "code_iso_alpha3",
+                    "-code_iso_alpha3",
+                    "code_iso_numeric3",
+                    "-code_iso_numeric3",
+                    "code_estandards_alpha",
+                    "-code_estandards_alpha"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "page_number_": {
+            "type": "integer"
+        },
+        "page_size_": {
+            "type": "integer"
+        },
+        "filter_search_": {
+            "type": "string"
+        },
+        "filter_code_iso_alpha3_": {
+            "type": "string"
+        },
+        "filter_code_iso_numeric3_": {
+            "type": "integer"
+        },
+        "filter_code_estandards_alpha_": {
+            "type": "string"
+        },
+        "filter_currency_type_": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "national",
+                    "digital",
+                    "virtual",
+                    "metal",
+                    "energy",
+                    "crypto",
+                    "code",
+                    "technical"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "filter_category_": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "electronic",
+                    "online_bankings",
+                    "money_transfers",
+                    "crypto_exchangers",
+                    "crypto_currencies",
+                    "vouchers",
+                    "cards",
+                    "cash",
+                    "games",
+                    "psps",
+                    "others"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        }
+    }
+}

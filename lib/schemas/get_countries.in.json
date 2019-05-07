@@ -1,0 +1,76 @@
+{
+    "type": "object",
+    "properties": {
+        "sort": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "name",
+                    "-name",
+                    "area",
+                    "-area",
+                    "population",
+                    "-population",
+                    "region",
+                    "-region",
+                    "sub_region",
+                    "-sub_region"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "page_number_": {
+            "type": "integer"
+        },
+        "page_size_": {
+            "type": "integer"
+        },
+        "filter_region_": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "africa",
+                    "americas",
+                    "asia",
+                    "europe",
+                    "oceania",
+                    "polar"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "filter_sub_region_": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "northern_africa",
+                    "southern_africa",
+                    "western_africa",
+                    "eastern_africa",
+                    "middle_africa",
+                    "northern_america",
+                    "south_america",
+                    "central_america",
+                    "caribbean",
+                    "southern_asia",
+                    "western_asia",
+                    "eastern_asia",
+                    "south_eastern_asia",
+                    "central_asia",
+                    "northern_europe",
+                    "southern_europe",
+                    "western_europe",
+                    "eastern_europe",
+                    "polynesia",
+                    "australia_and_new_zealand",
+                    "micronesia",
+                    "melanesia"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        }
+    }
+}

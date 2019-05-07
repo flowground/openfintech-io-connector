@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "page_number_": {
+            "type": "integer"
+        },
+        "page_size_": {
+            "type": "integer"
+        },
+        "filter_name_": {
+            "type": "string"
+        }
+    }
+}

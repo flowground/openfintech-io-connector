@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "sort": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "name",
+                    "-name",
+                    "status",
+                    "-status",
+                    "wmid",
+                    "-wmid",
+                    "rate_type",
+                    "-rate_type",
+                    "rates_export_standard",
+                    "-rates_export_standard"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "page_number_": {
+            "type": "integer"
+        },
+        "page_size_": {
+            "type": "integer"
+        },
+        "filter_name_": {
+            "type": "string"
+        },
+        "filter_status_": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "active",
+                    "blocked",
+                    "deleted"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        }
+    }
+}

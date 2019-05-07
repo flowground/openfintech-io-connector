@@ -1,0 +1,93 @@
+{
+    "type": "object",
+    "properties": {
+        "sort": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "name",
+                    "-name",
+                    "code",
+                    "-code"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "page_number_": {
+            "type": "integer"
+        },
+        "page_size_": {
+            "type": "integer"
+        },
+        "filter_search_": {
+            "type": "string"
+        },
+        "filter_name_": {
+            "type": "string"
+        },
+        "filter_code_": {
+            "type": "string"
+        },
+        "filter_types_": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "distributor",
+                    "aggregator",
+                    "collector",
+                    "acquirer"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "filter_sales_channels_": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "e_commerce",
+                    "in_app",
+                    "m_commerce",
+                    "moto",
+                    "m_pos",
+                    "pos"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "filter_features_": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "e_commerce",
+                    "installments",
+                    "partial_captures",
+                    "mastercard_secure",
+                    "american_express_safe_key",
+                    "a_b_testing",
+                    "payment_transfer",
+                    "hosted_payment_page",
+                    "edcc",
+                    "multi_lingual",
+                    "fraud_scrubbing",
+                    "multi_currency",
+                    "pay_out_of_winnings",
+                    "refunds",
+                    "verified_by_visa",
+                    "tokenization",
+                    "recurring_payments",
+                    "avs",
+                    "pre_authorisation",
+                    "chargeback_management",
+                    "discover_protectbuy",
+                    "level_iii_data",
+                    "j_secure_by_jcb"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        }
+    }
+}

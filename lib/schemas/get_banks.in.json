@@ -1,0 +1,47 @@
+{
+    "type": "object",
+    "properties": {
+        "sort": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "name",
+                    "-name",
+                    "status",
+                    "-status",
+                    "code",
+                    "-code",
+                    "sort_code",
+                    "-sort_code"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "page_number_": {
+            "type": "integer"
+        },
+        "page_size_": {
+            "type": "integer"
+        },
+        "filter_sort_code_": {
+            "type": "string"
+        },
+        "filter_code_": {
+            "type": "string"
+        },
+        "filter_status_": {
+            "type": "array",
+            "items": {
+                "enum": [
+                    "active",
+                    "liquidated",
+                    "problem",
+                    "deleted"
+                ],
+                "type": "string"
+            },
+            "uniqueItems": true
+        }
+    }
+}
